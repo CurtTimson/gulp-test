@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/CurtTimson/gulp-test/issues"
   },
-  "homepage": "https://github.com/CurtTimson/gulp-test#readme"
+  "homepage": "https://github.com/CurtTimson/gulp-test#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
 }
