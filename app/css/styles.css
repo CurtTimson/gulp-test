@@ -1,0 +1,9 @@
+body {
+  background: red;
+}
+body div {
+  background: blue;
+}
+body a {
+  float: left;
+}
