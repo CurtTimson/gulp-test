@@ -14,3 +14,15 @@ gulp.task(lessTask, function(){
 gulp.task('less-watch', function(){
   gulp.watch(lessPath, [lessTask]);
 });
+
+
+var useref = require('gulp-useref');
+var cssnano = require('gulp-cssnano');
+var gulpIf = require('gulp-if');
+
+gulp.task('css-useref', function(){
+  return gulp.src('app/*.html')
+    .pipe(useref())
+    .pipe(gulpIf('*.css', cssnano()))
+    .pipe(gulp.dest('dist'))
+});
